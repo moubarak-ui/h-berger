@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hébergement de Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hébergement de Votre Formulaire</h1>
+            <p class="description">Plusieurs options s'offrent à vous pour héberger votre formulaire. Choisissez celle qui correspond le mieux à vos besoins et compétences techniques.</p>
+        </header>
+        
+        <div class="options-container">
+            <div class="option-card">
+                <h3><span class="icon">🚀</span> GitHub Pages</h3>
+                <p>Idéal pour les débutants, gratuit et fiable.</p>
+                <ul>
+                    <li>Hébergement gratuit de sites statiques</li>
+                    <li>Intégration facile avec Git</li>
+                    <li>Nom de domaine personnalisable</li>
+                    <li>Parfait pour les portfolios et projets personnels</li>
+                </ul>
+                <a href="https://pages.github.com/" target="_blank" class="btn">Utiliser GitHub Pages</a>
+            </div>
+            
+            <div class="option-card">
+                <h3><span class="icon">✨</span> Netlify</h3>
+                <p>Déploiement continu ultra-rapide avec de nombreuses fonctionnalités.</p>
+                <ul>
+                    <li>Déploiement par drag-and-drop</li>
+                    <li>Intégration continue et déploiement automatique</li>
+                    <li>Formulaires sans backend</li>
+                    <li>Fonctions serverless incluses</li>
+                </ul>
+                <a href="https://www.netlify.com/" target="_blank" class="btn">Utiliser Netlify</a>
+            </div>
+            
+            <div class="option-card">
+                <h3><span class="icon">⚡</span> Vercel</h3>
+                <p>Plateforme performante pour le déploiement d'applications web.</p>
+                <ul>
+                    <li>Optimisé pour les performances</li>
+                    <li>Déploiement instantané</li>
+                    <li>Intégration avec les frameworks modernes</li>
+                    <li>CDN global inclus</li>
+                </ul>
+                <a href="https://vercel.com/" target="_blank" class="btn">Utiliser Vercel</a>
+            </div>
+        </div>
+        
+        <div class="code-section">
+            <h3>Votre Code HTML</h3>
+            <p>Copiez ce code dans un fichier avec l'extension .html pour commencer :</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Formulaire de Prédiction&lt;/title&gt;
+    &lt;style&gt;
+        /* Votre CSS ici */
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;form id="prediction-form"&gt;
+            &lt;!-- Vos champs de formulaire ici --&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        // Votre JavaScript ici
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            
+            <a href="#" class="btn download-btn" id="downloadBtn">Télécharger le Code Complet</a>
+        </div>
+        
+        <footer>
+            <p>© 2023 - Solution d'hébergement pour formulaire de prédiction</p>
+        </footer>
+    </div>
+
+    <script>
+        // Fonction pour télécharger le code
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // Contenu du fichier HTML (version simplifiée)
+            const htmlContent = `<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Prédiction</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --accent-color: #4cb5f5;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --success-color: #28a745;
+            --error-color: #dc3545;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* ... (le CSS complet va ici) ... */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulaire de Prédiction</h1>
+            <p>Remplissez le formulaire ci-dessous pour obtenir une prédiction</p>
+        </header>
+        
+        <div class="card">
+            <form id="prediction-form">
+                <div class="form-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <div class="error" id="nom-error">Veuillez entrer votre nom</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Âge</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required>
+                    <div class="error" id="age-error">Veuillez entrer un âge valide</div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Sexe</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="sexe-m" name="sexe" value="masculin" required>
+                            <label for="sexe-m">Masculin</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="sexe-f" name="sexe" value="feminin">
+                            <label for="sexe-f">Féminin</label>
+                        </div>
+                    </div>
+                    <div class="error" id="sexe-error">Veuillez sélectionner votre sexe</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="classe">Classe/Niveau</label>
+                    <select id="classe" name="classe" required>
+                        <option value="">Sélectionnez votre classe/niveau</option>
+                        <option value="6eme">6ème</option>
+                        <option value="5eme">5ème</option>
+                        <option value="4eme">4ème</option>
+                        <option value="3eme">3ème</option>
+                        <option value="seconde">Seconde</option>
+                        <option value="premiere">Première</option>
+                        <option value="terminale">Terminale</option>
+                    </select>
+                    <div class="error" id="classe-error">Veuillez sélectionner votre classe</div>
+                </div>
+                
+                <button type="submit">Obtenir la prédiction</button>
+            </form>
+        </div>
+        
+        <div class="loader" id="loader">
+            <div class="loader-spinner"></div>
+            <p>Traitement en cours...</p>
+        </div>
+        
+        <div class="card result-container" id="result-container">
+            <h2 class="result-title">Résultat de la prédiction</h2>
+            <div class="prediction" id="prediction-result">Prédiction en cours de calcul...</div>
+            <button onclick="resetForm()">Faire une nouvelle prédiction</button>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('prediction-form');
+        const loader = document.getElementById('loader');
+        const resultContainer = document.getElementById('result-container');
+        const predictionResult = document.getElementById('prediction-result');
+        
+        // URL de votre API - à remplacer par votre endpoint réel
+        const API_URL = 'https://votre-api.com/predict';
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            if (validateForm()) {
+                loader.style.display = 'block';
+                
+                const formData = {
+                    nom: document.getElementById('nom').value,
+                    age: document.getElementById('age').value,
+                    sexe: document.querySelector('input[name="sexe"]:checked').value,
+                    classe: document.getElementById('classe').value
+                };
+                
+                try {
+                    const response = await fetch(API_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error('Erreur HTTP: ' + response.status);
+                    }
+                    
+                    const data = await response.json();
+                    displayResult(data.prediction);
+                    
+                } catch (error) {
+                    console.error('Erreur:', error);
+                    displayResult("Désolé, une erreur s'est produite.");
+                } finally {
+                    loader.style.display = 'none';
+                }
+            }
+        });
+        
+        function validateForm() {
+            let isValid = true;
+            
+            // Validation simplifiée
+            if (!document.getElementById('nom').value.trim()) {
+                document.getElementById('nom-error').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('nom-error').style.display = 'none';
+            }
+            
+            // ... autres validations
+            
+            return isValid;
+        }
+        
+        function displayResult(prediction) {
+            predictionResult.textContent = prediction;
+            resultContainer.style.display = 'block';
+        }
+        
+        function resetForm() {
+            form.reset();
+            resultContainer.style.display = 'none';
+        }`;
+
+            // Créer un blob et un lien de téléchargement
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'formulaire-prediction.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        })();
+    </script>
+</body>
+</html>
